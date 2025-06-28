@@ -21,7 +21,6 @@ class Player(CircleShape):
 
     def rotate(self, dt):
         self.rotation = (PLAYER_TURN_SPEED * dt) + self.rotation
-        print(f"Rotation is now: {self.rotation}")
         self.rotation = self.rotation % 360
 
     def move(self, dt):
